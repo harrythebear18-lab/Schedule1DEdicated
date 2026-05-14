@@ -1,0 +1,30 @@
+# DedicatedServerMod client mod policy configuration.
+# This file controls which client mods are allowed on the server.
+
+
+[metadata]
+schemaVersion = 1
+
+policyVersion = 1
+
+migratedFrom = 'default'
+
+migratedAtUtc = '2026-05-14T20:36:32.1702108Z'
+
+# Policy mode: 'AllowList', 'DenyList', or 'Permissive'
+policyMode = 'Permissive'
+
+# Allow unknown client mods (mods not explicitly listed)
+allowUnknownMods = true
+
+# Require hash verification for known mods
+requireHashVerification = false
+
+# Known approved client mods
+[approvedMods]
+
+# Known blocked client mods
+[blockedMods]
+
+# Mod-specific settings
+[modSettings]
