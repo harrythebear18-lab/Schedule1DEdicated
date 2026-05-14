@@ -1,0 +1,76 @@
+# DedicatedServerMod permissions file
+
+
+[metadata]
+schemaVersion = 1
+
+migrationVersion = 1
+
+migratedFrom = 'default'
+
+migratedAtUtc = '2026-05-14T20:36:32.1702108Z'
+
+[group.default]
+priority = 0
+
+inherits = []
+
+allow = ['server.help']
+
+deny = []
+
+[group.support]
+priority = 10
+
+inherits = ['default']
+
+allow = ['server.info']
+
+deny = []
+
+[group.moderator]
+priority = 20
+
+inherits = ['support']
+
+allow = ['player.ban', 'player.bring', 'player.kick', 'player.list', 'player.return', 'player.unban']
+
+deny = []
+
+[group.administrator]
+priority = 30
+
+inherits = ['moderator']
+
+allow = ['permissions.group.list', 'permissions.info', 'player.vanish', 'server.reloadconfig', 'server.save']
+
+deny = []
+
+[group.operator]
+priority = 40
+
+inherits = ['administrator']
+
+allow = ['clientmods.policy.bypass', 'console.command.*', 'console.open', 'permissions.deny', 'permissions.grant', 'permissions.group.assign', 'permissions.group.unassign', 'permissions.reload', 'permissions.revoke', 'permissions.tempgrant', 'server.stop']
+
+deny = []
+
+[player]
+
+[player."htsoundtech"]
+priority = 50
+inherits = ['operator']
+allow = []
+deny = []
+
+[player."guy"]
+priority = 10
+inherits = ['default']
+allow = []
+deny = []
+
+[player."Autx554"]
+priority = 10
+inherits = ['default']
+allow = []
+deny = []
